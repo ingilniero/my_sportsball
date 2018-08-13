@@ -1,3 +1,9 @@
+PATH
+  remote: components/app_component
+  specs:
+    app_component (0.1.0)
+      rails (~> 5.1.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -175,6 +181,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  app_component!
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
