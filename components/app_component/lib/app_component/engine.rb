@@ -8,5 +8,9 @@ module AppComponent
           config.paths["db/migrate"].expanded)
       end
     end
+
+    config.generators do |g|
+      g.template_engine :slim
+    end
   end
 end
