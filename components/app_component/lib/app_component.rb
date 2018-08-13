@@ -1,6 +1,5 @@
 require "slim-rails"
-require "app_component/engine"
 
 module AppComponent
-  # Your code goes here...
+  require "app_component/engine"
 end
