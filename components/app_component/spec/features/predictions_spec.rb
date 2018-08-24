@@ -18,7 +18,7 @@ RSpec.describe 'the prediction process', :type => :feature do
   it 'get a new prediction' do
     visit '/app_component/'
 
-    click_link 'Predict on outcome!'
+    click_link 'Predictions'
 
     select 'UofL', from: 'First team'
     select 'UK', from: 'Second team'

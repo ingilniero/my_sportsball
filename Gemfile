@@ -5,6 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+path 'components' do
+  gem 'app_component'
+end
+
+gem "trueskill",
+  git: "https://github.com/benjaminleesmith/trueskill",
+  ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -53,11 +60,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-path 'components' do
-  gem 'app_component'
-end
-
-gem "trueskill",
-  git: "https://github.com/benjaminleesmith/trueskill",
-  ref: "e404f45af5b3fb86982881ce064a9c764cc6a901"

@@ -4,7 +4,7 @@ RSpec.describe 'the app', :type => :feature do
   it 'hooks up to /' do
     visit '/'
 
-    within 'body h1' do
+    within 'main h1' do
       expect(page).to have_content 'Sportsball'
     end
   end
@@ -13,7 +13,7 @@ RSpec.describe 'the app', :type => :feature do
     visit '/'
 
     click_link 'Teams'
-    within 'body h1' do
+    within 'main h1' do
       expect(page).to have_content 'Teams'
     end
   end
@@ -22,7 +22,7 @@ RSpec.describe 'the app', :type => :feature do
     visit '/'
 
     click_link 'Games'
-    within 'body h1' do
+    within 'main h1' do
       expect(page).to have_content 'Games'
     end
   end
@@ -33,7 +33,7 @@ RSpec.describe 'the app', :type => :feature do
 
     visit '/'
 
-    click_link 'Predict on outcome!'
+    click_link 'Predictions'
     click_button 'What is it going to be'
   end
 end
