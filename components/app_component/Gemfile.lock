@@ -6,6 +6,12 @@ GIT
     trueskill (1.0.0)
 
 PATH
+  remote: ..
+  specs:
+    predictor (0.1.0)
+      trueskill
+
+PATH
   remote: .
   specs:
     app_component (0.1.0)
@@ -176,6 +182,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   pg (~> 0.18)
+  predictor!
   rails-controller-testing
   rspec-rails
   shoulda-matchers
