@@ -1,14 +1,14 @@
 RSpec.describe Predictor::Predictor do
   before do
-    @team1 = create_team(name: "A")
-    @team2 = create_team(name: "B")
+    @team1 = OpenStruct.new(id: 6)
+    @team2 = OpenStruct.new(id: 7)
 
     @predictor = Predictor::Predictor.new([@team1, @team2])
   end
 
   it 'predicts teams that have won in the past to win in the future' do
-    game = create_game(first_team: @team1,
-                       second_team: @team2, winning_team: 1)
+    game = OpenStruct.new(first_team_id: @team1.id,
+                          second_team_id: @team2.id, winning_team: 1)
     @predictor.learn([game])
 
     prediction = @predictor.predict(@team2, @team1)
@@ -19,14 +19,14 @@ RSpec.describe Predictor::Predictor do
   end
 
   it 'changes predictions based on games learned' do
-    game1 = create_game(first_team: @team1,
-                        second_team: @team2, winning_team: 1)
+    game1 = OpenStruct.new(first_team_id: @team1.id,
+                           second_team_id: @team2.id, winning_team: 1)
 
-    game2 = create_game(first_team: @team1,
-                        second_team: @team2, winning_team: 2)
+    game2 = OpenStruct.new(first_team_id: @team1.id,
+                           second_team_id: @team2.id, winning_team: 2)
 
-    game3 = create_game(first_team: @team1,
-                        second_team: @team2, winning_team: 2)
+    game3 = OpenStruct.new(first_team_id: @team1.id,
+                           second_team_id: @team2.id, winning_team: 2)
 
     @predictor.learn([game1, game2, game3])
 

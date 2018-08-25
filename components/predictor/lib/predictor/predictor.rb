@@ -29,7 +29,7 @@ module Predictor
 
       winner = higher_mean_team(first_team , second_team) ?  team1 : team2
 
-      Predictor::Prediction.new(team1, team2, winner)
+      ::Predictor::Prediction.new(team1, team2, winner)
     end
 
     def higher_mean_team(first_team, second_team)
