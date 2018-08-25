@@ -47,7 +47,7 @@ RSpec.configure do |config|
     config.include ::Rails::Controller::Testing::Integration, :type => type
   end
 
-  config.include ObjectCreationMethods
+  config.include AppComponent::ObjectCreationMethods
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
 end
