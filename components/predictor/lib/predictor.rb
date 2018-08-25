@@ -1,3 +1,4 @@
 module Predictor
-  # Your code goes here...
+  require 'predictor/predictor'
+  require 'predictor/prediction'
 end
