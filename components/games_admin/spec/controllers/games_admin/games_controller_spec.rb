@@ -1,3 +1,4 @@
+require 'spec_helper'
 
 RSpec.describe GamesAdmin::GamesController, :type => :controller do
   routes { GamesAdmin::Engine.routes }
