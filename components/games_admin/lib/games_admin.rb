@@ -1,5 +1,8 @@
-require "games_admin/engine"
+require "slim-rails"
+require 'jquery-rails'
+
+require 'app_component'
 
 module GamesAdmin
-  # Your code goes here...
+  require "games_admin/engine"
 end
