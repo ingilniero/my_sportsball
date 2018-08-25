@@ -1,7 +1,15 @@
+GIT
+  remote: https://github.com/benjaminleesmith/trueskill
+  revision: e404f45af5b3fb86982881ce064a9c764cc6a901
+  ref: e404f45af5b3fb86982881ce064a9c764cc6a901
+  specs:
+    trueskill (1.0.0)
+
 PATH
   remote: .
   specs:
     predictor (0.1.0)
+      trueskill
 
 GEM
   remote: https://rubygems.org/
@@ -30,6 +38,7 @@ DEPENDENCIES
   predictor!
   rake (~> 10.0)
   rspec (~> 3.0)
+  trueskill!
 
 BUNDLED WITH
    1.16.1
