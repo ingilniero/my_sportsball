@@ -23,3 +23,7 @@
 /web_container/.byebug_history
 /deploy/
 deploy-*
+
+/*/**/dummy/db/
+/*/**/dummy/log/
+/*/**/dummy/tmp/
