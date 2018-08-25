@@ -9,6 +9,7 @@ end
 
 path '../components' do
   gem 'app_component'
+  gem 'games_admin'
 end
 
 gem "trueskill",
