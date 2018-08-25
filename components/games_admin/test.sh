@@ -6,7 +6,7 @@ echo "*** Running games admin engine specs"
 bundle install | grep Installing
 bundle exec rake db:create db:migrate
 RAILS_ENV=test bundle exec rake db:create
-RALLS_ENV=test bundle exec rake db:migrate
+RAILS_ENV=test bundle exec rake db:migrate
 bundle exec rspec spec
 exit_code+=$?
 
