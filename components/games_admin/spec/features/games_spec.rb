@@ -7,7 +7,7 @@ RSpec.describe "games admin", :type => :feature do
   end
 
   it "allows for the management of games" do
-    visit "/app_component/games"
+    visit "/games_admin/games"
 
     click_link "New Game"
 

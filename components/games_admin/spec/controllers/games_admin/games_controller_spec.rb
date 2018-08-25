@@ -1,6 +1,6 @@
 
-RSpec.describe AppComponent::GamesController, :type => :controller do
-  routes { AppComponent::Engine.routes }
+RSpec.describe GamesAdmin::GamesController, :type => :controller do
+  routes { GamesAdmin::Engine.routes }
 
   before do
     @team1 = create_team
@@ -19,7 +19,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     end
 
     it "routes to #index" do
-      expect(:get => "/games").to route_to("app_component/games#index")
+      expect(:get => "/games").to route_to("games_admin/games#index")
     end
   end
 
@@ -31,7 +31,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     end
 
     it "routes to #show" do
-      expect(:get => "/games/1").to route_to("app_component/games#show", :id => "1")
+      expect(:get => "/games/1").to route_to("games_admin/games#show", :id => "1")
     end
   end
 
@@ -42,7 +42,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     end
 
     it "routes to #new" do
-      expect(:get => "/games/new").to route_to("app_component/games#new")
+      expect(:get => "/games/new").to route_to("games_admin/games#new")
     end
   end
 
@@ -54,7 +54,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     end
 
     it "routes to #edit" do
-      expect(:get => "/games/1/edit").to route_to("app_component/games#edit", :id => "1")
+      expect(:get => "/games/1/edit").to route_to("games_admin/games#edit", :id => "1")
     end
   end
 
@@ -78,7 +78,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
       end
 
       it "routes to #create" do
-        expect(:post => "/games").to route_to("app_component/games#create")
+        expect(:post => "/games").to route_to("games_admin/games#create")
       end
     end
 
@@ -118,7 +118,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
       end
 
       it "routes to #update" do
-        expect(:put => "/games/1").to route_to("app_component/games#update", :id => "1")
+        expect(:put => "/games/1").to route_to("games_admin/games#update", :id => "1")
       end
     end
 
@@ -152,7 +152,7 @@ RSpec.describe AppComponent::GamesController, :type => :controller do
     end
 
     it "routes to #destroy" do
-      expect(:delete => "/games/1").to route_to("app_component/games#destroy", :id => "1")
+      expect(:delete => "/games/1").to route_to("games_admin/games#destroy", :id => "1")
     end
   end
 end
