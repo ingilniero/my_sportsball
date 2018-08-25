@@ -16,12 +16,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", "5.1.4"
   s.add_dependency "slim-rails", "3.1.3"
+  s.add_dependency "jquery-rails", "4.3.1"
   s.add_dependency "trueskill"
 
-  s.add_development_dependency "sqlite3"
-
-  s.add_dependency "jquery-rails", "4.3.1"
-
+  s.add_development_dependency "pg", '~> 0.18'
   s.add_development_dependency "rspec-rails"
   s.add_development_dependency "shoulda-matchers"
   s.add_development_dependency "database_cleaner"
