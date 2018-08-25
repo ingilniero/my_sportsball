@@ -21,3 +21,5 @@
 /web_container/yarn-error.log
 
 /web_container/.byebug_history
+/deploy/
+deploy-*
