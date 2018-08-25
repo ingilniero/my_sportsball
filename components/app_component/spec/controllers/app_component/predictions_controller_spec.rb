@@ -23,7 +23,7 @@ RSpec.describe AppComponent::PredictionsController, :type => :controller do
       session: {}
 
       prediction = assigns(:prediction)
-      expect(prediction).to be_a AppComponent::Prediction
+      expect(prediction).to be_a Predictor::Prediction
       expect(prediction.first_team).to eq @team1
       expect(prediction.second_team).to eq @team2
     end
